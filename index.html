@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Dolphin-logo.svg/1200px-Dolphin-logo.svg.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Revou Fundamental Course </title>
+</head>
+<body>
+    <header>
+        <div class="navbar" id="home">
+            <a href="index.html"><img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Logo-RevoU-5_1.original.png" alt="Revou"></img></a>
+            <div class="navbar-nav">
+                <nav>
+                    <ul>
+                        <li> <a href="#home"> Home </a> </li>
+                        <li> <a href="#calc"> Calculator </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="content">
+            <h1> Revou Fundamental Course</h1>
+            <p> Halo Semuanya! <br>
+                Selamat Datang Di Websiteku. <br>
+                Disini Kalian Bisa Hitung Luas dan Keliling Persegi. <br>
+                Website Ini Dibuat Untuk Assessment Revou.
+            </p>
+        </div>
+    </section>
+
+    <section class="container-calc" id="calc">
+        <div class="calc-title">
+            <h1> Calculator </h1>
+        </div>
+        <div class="calc-content" id="results">
+            <div class="ls-content content">
+                <h1> Hitung Luas </h1>
+                <input type="number" id="txt-ls" placeholder="Masukkan Angka Disini...">
+                <button id="btn-ls"> Hitung </button>
+                <div class="row ls" id="results-ls">
+                </div>
+            </div>
+            <div class="kl-content content">
+                <h1> Hitung Keliling </h1>
+                <input type="number" id="txt-kl" placeholder="Masukkan Angka Disini...">
+                <button id="btn-kl"> Hitung </button>
+                <div class="row kl" id="results-kl">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <a href="#home"> Home </a>
+        <p> Copyright @2025 Jeremi Salvatores</p>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
