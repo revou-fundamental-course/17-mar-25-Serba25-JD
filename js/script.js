@@ -1,18 +1,38 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     const clearResults = () => {
+
         // Reset Value Persegi
-        lsp.value = '';
-        resultlsp.innerHTML = '';
-        kl.value = '';
-        resultkl.innerHTML = '';
+
+        // Luas Persegi
+        const lsp = document.getElementById('txt-lsp');
+        const resultlsp = document.getElementById('results-lsp');
+        if (lsp) lsp.value = '';
+        if (resultlsp) resultlsp.innerHTML = '';
+
+        // Keliling Persegi
+        const kl = document.getElementById('txt-klp');
+        const resultkl = document.getElementById('results-klp');
+        if (kl) kl.value = '';
+        if (resultkl) resultkl.innerHTML = '';
+
         // Reset Value Persegi Panjang
-        lsppp.value = '';
-        lsppl.value = '';
-        resultlspp.innerHTML = '';
-        klpp.value = '';
-        klpl.value = '';
-        resultklp.innerHTML = '';
+
+        // Luas Persegi Panjang
+        const lsppp = document.getElementById('txt-lspp-p');
+        const lsppl = document.getElementById('txt-lspp-l');
+        const resultlspp = document.getElementById('results-lspp');
+        if (lsppp) lsppp.value = '';
+        if (lsppl) lsppl.value = '';
+        if (resultlspp) resultlspp.innerHTML = '';
+
+        // Keliling Persegi Panjang
+        const klpp = document.getElementById('txt-klpp-p');
+        const klpl = document.getElementById('txt-klpp-l');
+        const resultklp = document.getElementById('results-klpp');
+        if (klpp) klpp.value = '';
+        if (klpl) klpl.value = '';
+        if (resultklp) resultklp.innerHTML = '';
     };
 
     // Function Persegi
@@ -45,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     `;
                     setTimeout(() => {
                         clearResults();
-                    }, 300000);
+                    }, 60000);
                 }
             };
             btnlsp.onclick = luasp;
@@ -54,7 +74,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     luasp();
                 }
             });
-        } else 
+        } else
+
         if (selectP === "kelilingp") {
             pElement.innerHTML = `
             <input type="text" id="txt-klp" placeholder="Masukkan angka disini...">
@@ -79,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     `;
                     setTimeout(() => {
                         clearResults();
-                    }, 300000);
+                    }, 60000);
                 }
             };
             btnkl.onclick = kelilingp;
@@ -124,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     `;
                     setTimeout(() => {
                         clearResults();
-                    }, 300000);
+                    }, 60000);
                 }
             };
             btnlspp.onclick = luaspp;
@@ -138,7 +159,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     luaspp();
                 }
             });
-        } else 
+        } else
+        
         if (selectPp === "kelilingpp") {
             ppElement.innerHTML = `
             <input type="text" id="txt-klpp-p" placeholder="Masukkan panjang disini...">
@@ -166,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     `;
                     setTimeout(() => {
                         clearResults();
-                    }, 300000);
+                    }, 60000);
                 }
             };
             btnklp.onclick = kelilingpp;
